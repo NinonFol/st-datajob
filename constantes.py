@@ -6,7 +6,7 @@ def membres_groupe():
 # Importation du jeu de données 2020
 def import_data():
     import pandas as pd
-    df = pd.read_csv('C:/Users/ninon/Documents/2-DataScientest/3_Projet_Datajob/Data/streamlit_app/tabs/kaggle_survey_2020_responses.csv')
+    df = pd.read_csv(kaggle_survey_2020_responses.csv')
     return df
 
 #Texte à renseigner en introduction du projet
