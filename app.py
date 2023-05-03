@@ -20,11 +20,11 @@ from preprocessing_df import pretraitement, ordonner_colonnes, encodage, reducti
 from model_ml import obtain_target_features, train_and_save_model
 
 #Importer les données 2020 et 2021
-df_2020 = import_data('C:/Users/ninon/Documents/2-DataScientest/3_Projet_Datajob/Data/streamlit_app/tabs/kaggle_survey_2020_responses.csv')
+df_2020 = import_data('kaggle_survey_2020_responses.csv')
 df_2020 = ordonner_colonnes(df_2020)
 df_2020.Q24=df_2020.Q24.replace(['$0-999'],['0-999']) #Parti pris de changer la catégorie 499999
 
-df_2021 = import_data('C:/Users/ninon/Documents/2-DataScientest/3_Projet_Datajob/Data/streamlit_app/tabs/df_2021.csv')
+df_2021 = import_data('df_2021.csv')
 df_2021 = df_2021.drop(0,axis=0) #supprimer les questions de df 2021
 df_2021.drop(df_2021.columns[[0,]], axis=1, inplace=True)
 
