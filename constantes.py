@@ -6,7 +6,7 @@ def membres_groupe():
 # Importation du jeu de données 2020
 def import_data(link_file):
     import pandas as pd
-    df = pd.read_csv(link_file)
+    df = pd.read_csv(link_file, on_bad_lines='skip')
     return df
 
 #Texte à renseigner en introduction du projet
