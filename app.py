@@ -25,8 +25,8 @@ df_2020 = ordonner_colonnes(df_2020)
 df_2020.Q24=df_2020.Q24.replace(['$0-999'],['0-999']) #Parti pris de changer la catégorie 499999
 
 #Pour pouvoir charger un fichier >25mb sur git hub
-A = import_data('df_2021_A.csv', on_bad_lines='skip')
-B = import_data('df_2021_B.csv', on_bad_lines='skip')
+A = import_data('df_2021_A.csv')
+B = import_data('df_2021_B.csv')
 df_2021 = pd.concat([A, B], axis = 0)
 
 # df_2021 = import_data('df_2021.csv')
