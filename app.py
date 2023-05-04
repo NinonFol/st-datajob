@@ -19,6 +19,14 @@ from constantes import membres_groupe, import_data, introduction, distribution
 from preprocessing_df import pretraitement, ordonner_colonnes, encodage, reduction
 from model_ml import obtain_target_features, train_and_save_model
 
+#Fonction d'import des données
+@st.cache_data
+def import_data(link_file):
+    import pandas as pd
+    df = pd.read_csv(link_file)
+    return df
+
+
 #Importer les données 2020 et 2021
 df_2020 = import_data('kaggle_survey_2020_responses.csv')
 
