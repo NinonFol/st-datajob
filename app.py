@@ -66,7 +66,7 @@ df = pretrait_encodage_reduction(df_union)
 
 #Titre du streamlit
 # st.image('./assets/rapport_data.jpg')
-st.image('assets/illu.png')
+st.image('illu.png')
 st.title('PROJET DATAJOB ')
 st.title('Les métiers de la Data en 2020')
 #Side bar---------------------------------------------------------------------------
