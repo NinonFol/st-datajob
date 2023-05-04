@@ -25,6 +25,7 @@ def ordonner_colonnes(df):
     return df
 
 #Deuxième retraitement DF
+
 def pretraitement(df):
     import pandas as pd
     import numpy as np
@@ -208,6 +209,7 @@ def pretraitement(df):
     return df
 
 #Encodage des données
+
 def encodage(df):
     
         ############################################One hot encoding des colonnes ['Q2','Q3','Q8', 'Q11','Q30','Q32','Q38']
