@@ -23,7 +23,7 @@ from model_ml import obtain_target_features, train_and_save_model
 @st.cache_data
 def import_data(link_file):
     import pandas as pd
-    df = pd.read_csv(link_file)
+    df = pd.read_csv(link_file, on_bad_lines='skip')
     return df
 
 
