@@ -79,8 +79,8 @@ st.title('PROJET DATAJOB ')
 st.title('Les métiers de la Data en 2020')
 #Side bar---------------------------------------------------------------------------
 with st.sidebar:
-    radio_btn = st.radio("",
-                     options=('Présentation','Visualisation','Modélisation'), label_visibility='collapsed')
+    radio_btn = st.radio("Menu",
+                     options=('Présentation','Visualisation','Modélisation'))
     #  Affichage membres du groupe
     st.markdown('---')
     st.caption('Equipe projet')
