@@ -80,7 +80,7 @@ st.title('Les métiers de la Data en 2020')
 #Side bar---------------------------------------------------------------------------
 with st.sidebar:
     radio_btn = st.radio("",
-                     options=('Présentation','Visualisation','Modélisation'))
+                     options=('Présentation','Visualisation','Modélisation'), label_visibility='collapsed')
     #  Affichage membres du groupe
     st.markdown('---')
     st.caption('Equipe projet')
