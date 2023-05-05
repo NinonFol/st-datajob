@@ -15,7 +15,7 @@ from sklearn.neighbors import KNeighborsClassifier
 from sklearn.ensemble import RandomForestRegressor
 from sklearn import svm
 
-from constantes import membres_groupe, introduction, distribution
+from constantes import membres_groupe, introduction, distribution, repartion_missions
 from preprocessing_df import pretraitement, ordonner_colonnes, encodage, reduction
 from model_ml import obtain_target_features, train_and_save_model
 
