@@ -73,7 +73,7 @@ df = pretrait_encodage_reduction(df_union)
 
 
 #Titre du streamlit
-st.image('assets/illu.png')
+st.image('illu.png')
 st.title('PROJET DATAJOB ')
 st.title('Les métiers de la Data en 2020')
 #Side bar---------------------------------------------------------------------------
@@ -118,7 +118,7 @@ if radio_btn == 'Présentation':
 - Des informations techniques sur la data, qui sont elles-mêmes de 2 types selon le format de la question : \n\
     - Questions à choix unique, comme la question 8 par exemple : la réponse à cette question (Q8) est contenue dans une seule variable. \n\
     - Questions à choix multiples, comme la question 7 par exemple, où la réponse à cette question est répartie en 13 colonnes, (Q7_Part_1, Q7_Part_2, Q7_Part_3…). Chacune de ces colonnes correspond à un choix possible de réponse à la question.')
-    st.image('assets/decoupage_sous_questions.png')
+    st.image('decoupage_sous_questions.png')
 
 
 
@@ -149,7 +149,7 @@ elif radio_btn == 'Visualisation':
 
     #Répartition des missions par métier
     st.markdown('---')
-    st.image('assets/missions.png')
+    st.image('missions.png')
     
     st.write('👉 Observations: \n \
 - Les “research scientist” passent 2x plus de temps à faire de la recherche sur du ML  \n\
@@ -158,7 +158,7 @@ elif radio_btn == 'Visualisation':
 
     #Utilisation des méthodes de machine learning
     st.markdown('---')
-    st.image('assets/ml.png')
+    st.image('ml.png')
 
     st.write('👉 Forte corrélation entre la méthode de ML utilisée et le métier data (cf métier de Research Scientist versus Software engineer)')
 
